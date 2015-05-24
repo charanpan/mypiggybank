@@ -103,5 +103,4 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 TEMPLATE_DIRS = (
-    os.path.join(os.path.dirname(BASE_DIR), "project_piggy", "piggy_ui", "static", "templates"),
 )
