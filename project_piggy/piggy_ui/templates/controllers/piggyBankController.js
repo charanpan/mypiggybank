@@ -11,5 +11,10 @@
                 name: 'Hiss',
                 animal: 'Snake'
             }];
+
+            $scope.clickHandler = function(buttonName) {
+                console.log(buttonName);
+                $scope.well.value = buttonName;
+            };
         }])
 })(window.angular);
