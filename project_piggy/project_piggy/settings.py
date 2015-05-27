@@ -14,6 +14,7 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# '/Users/spanchav/Desktop/files/virtualenvs/mypiggybank/workspace/mypiggybank/project_piggy'
 
 
 # Quick-start development settings - unsuitable for production
@@ -103,4 +104,20 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 TEMPLATE_DIRS = (
+    os.path.join(BASE_DIR, "piggy_ui", "static", "templates"),
+    # '/Users/spanchav/Desktop/files/virtualenvs/mypiggybank/workspace/mypiggybank/project_piggy/piggy_ui/static/templates'
 )
+
+if DEBUG:
+    MEDIA_URL = '/media/'
+
+    # STATIC_ROOT is where all the files will be collected to.
+    STATIC_ROOT = os.path.join(BASE_DIR, "piggy_ui", "static", "static-only")
+
+    # MEDIA_ROOT is where user would uplaod stuff to.
+    MEDIA_ROOT = os.path.join(BASE_DIR, "piggy_ui", "static", "media")
+
+    # STATICFILES_DIRS is where we put our static files like css, js, etc.
+    STATICFILES_DIRS = (
+        os.path.join(BASE_DIR, "piggy_ui", "static", "static"),
+    )
