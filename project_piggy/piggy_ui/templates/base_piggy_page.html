@@ -9,6 +9,7 @@
 <body ng-app="piggyBank">
 
 <div ng-controller="PiggyBankController" ng-cloak>
+
     <div class="container-fluid">
         <div class="container-fluid header">
             <div class="logo">
@@ -21,7 +22,9 @@
                 <div class="row-fluid content-row">
                     <!---- Looping over greetings ---->
                     <div ng-repeat="greet in greetings">
-                        <h4> {{greet.name}}, says, {{greet.animal}} </h4>
+                        {% verbatim %}
+                        <h4> {{ greet.name }}, says, {{ greet.animal }} </h4>
+                        {% endverbatim %}
                     </div>
                 </div>
                 <div class="button-section">
@@ -51,7 +54,9 @@
                     </div>
                     <div class="col-md-offset-4 row info-row">
                         <div class="well info-well">
+                            {% verbatim %}
                             <h3 class="form-text"> {{ well }} </h3></div>
+                            {% endverbatim %}
                     </div>
 
                 </div>
