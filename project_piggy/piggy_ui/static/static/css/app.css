@@ -1,6 +1,7 @@
 /*CSS goes here*/
-body {
+html, body {
     background: #FFFFFF;
+    height: 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -27,4 +28,10 @@ section:nth-child(2) {
 
 section:nth-child(3) {
     background-color: #a878c0;
+}
+
+.half-div{
+    height:50vh;
+    overflow-y:auto;
+    border: 1px solid black;
 }
