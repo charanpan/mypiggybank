@@ -112,7 +112,7 @@ if DEBUG:
     MEDIA_URL = '/media/'
 
     # STATIC_ROOT is where all the files will be collected to.
-    STATIC_ROOT = os.path.join(BASE_DIR, "piggy_ui", "static", "static-only")
+    STATIC_ROOT = os.path.join(BASE_DIR, "piggy_ui", "static-only")
 
     # MEDIA_ROOT is where user would uplaod stuff to.
     MEDIA_ROOT = os.path.join(BASE_DIR, "piggy_ui", "static", "media")
