@@ -17,6 +17,8 @@
                 <h1> Box1 </h1>
             </div>
             <div class="row half-div" id="logo-div">
+                {% block logo_block %}
+                {% endblock %}
             </div>
         </div>
     </section>
@@ -29,6 +31,12 @@
         <div class="container-fluid">
             <h1> Box3 </h1>
         </div>
+    </section>
+          <section id="box4">
+            <div class="container-fluid">
+                 <h1> Box4 </h1>
+
+            </div>
     </section>
     <!------------------------------------>
 </div>
@@ -44,10 +52,10 @@
 
 <link rel="stylesheet" type="text/css" href="static/vendor/bootstrap/3.3.4/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="static/css/app.css">
-<link href='http://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Voltaire' rel='stylesheet' type='text/css'>
 <script src="static/vendor/bootstrap/3.3.4/js/bootstrap.js"></script>
 <script src="static/vendor/angular/1.3.15/angular.js"></script>
 <script src="static/controllers/piggyBankController.js"></script>
-
+<link rel="stylesheet" type="text/css" href="static/css/page_elements.css">
 </body>
 </html>

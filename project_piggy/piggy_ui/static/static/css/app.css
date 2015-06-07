@@ -6,6 +6,7 @@ html, body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    overflow-x:hidden;
 }
 
 .form-text {
@@ -29,9 +30,39 @@ section:nth-child(2) {
 section:nth-child(3) {
     background-color: #a878c0;
 }
+section:nth-child(4) {
+    background-color: #fff;
+}
 
 .half-div{
-    height:50vh;
-    overflow-y:auto;
-    border: 1px solid black;
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 50vh;
+  overflow-x:hidden;
+  overflow-y:hidden;
+  border: 1px solid black;
+}
+
+.div-centered{
+  position: relative;
+  width: 100vw;
+  margin-top: 25vh;
+  margin-bottom: 25vh;
+
+}
+
+.text-centered {
+    text-align:center;
+}
+
+.child-center {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.logo-450{
+    font-size: 450%;
 }
