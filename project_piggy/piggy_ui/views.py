@@ -4,3 +4,6 @@ from django.shortcuts import render, render_to_response, RequestContext
 
 def home(request):
     return render_to_response("piggy_page_with_elements.html", locals(), context_instance=RequestContext(request))
+
+def temp(request):
+    return render_to_response("temp.html", locals(), context_instance=RequestContext(request))
