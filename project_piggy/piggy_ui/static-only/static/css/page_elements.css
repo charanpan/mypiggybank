@@ -59,5 +59,38 @@ div.img-div {
 }
 
 #logo-div {
-font-family: 'Voltaire', sans-serif;
+    font-family: 'Voltaire', sans-serif;
+}
+
+.logo-450{
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 450%;
+    color: #3E4406;
+    //text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.box h3{
+	text-align:center;
+	position:relative;
+	top:80px;
+}
+
+.box {
+	width:50vw;
+	height:25vh;
+	background:#FFF;
+	position: fixed;
+	margin-top: 25vh;
+    margin-left: 25vw;
+    margin-right: 25vw;
+}
+
+.box2 {
+	width:50vw;
+	height:25vh;
+	background:blue;
+	position: fixed;
+	margin-top: 23vh;
+    margin-left: 24vw;
+    margin-right: 25vw;
 }

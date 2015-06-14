@@ -8,12 +8,12 @@
 </head>
 
 <body ng-app="piggyBank">
-
-
-
 <div ng-controller="PiggyBankController" ng-cloak>
     <section id="box1">
-        <div class="half-div"></div>
+        <div class="half-div">
+            {%block currency_note%}
+            {%endblock%}
+        </div>
         <div class="half-div" id="foo">
             {% block logo_block %}
             {% endblock %}
@@ -57,7 +57,6 @@
 <script src="static/vendor/skrollr/0.6.29/skrollr.min.js"></script>
 <script type="text/javascript">
       var s = skrollr.init();
-
 </script>
 
 </body>
