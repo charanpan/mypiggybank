@@ -11,3 +11,7 @@ Instructions to set up env:
 3. pip install django
 4. mkdir workspace
 5. git clone the mypiggybank repo to workspace
+
+Things to fix:
+1. As screen size decreases, the currency div doesn't stay as a rectangle.
+2. The currency divs appears irregularly on a smaller screen. 
