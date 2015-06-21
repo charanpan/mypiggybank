@@ -1,21 +1,70 @@
 {% extends "base_piggy_page.html" %}
+
+<!----- ...Text blocks div... ---->
 {% block logo_block %}
+    <div class="div-centered text-centered" data-0="opacity: 1;" data-30p="opacity: 0;">
+        <h1 class="logo-450"> Piggy Bank </h1>
+        <h3 class="content">Let your  money grow</h3>
+    </div>
+    <div class="div-centered text-centered" data-50p="opacity:0;" data-100p="opacity:1;" data-150p="opacity:0">
+        <h2 class="logo-450"> Text 2 </h2>
+        <h3 class="content">There will be more words about your site than you expect here and we should make sure that the div doesn't overflow.
+            Oh, it should have been 'does not' doesn't. For testing</h3>
+    </div>
+    <div class="div-centered text-centered" data-160p="opacity:0;" data-210p="opacity:1;" data-250p="opacity:0">
+        <h1 class="logo-450"> Text 3 </h1>
+        <h3 class="content">Let your  money grow</h3>
+     </div>
+    <div class="div-centered text-centered" data-260p="opacity:0;" data-300p="opacity:1;" data-310p="opacity:0">
+        <h1 class="logo-450"> Text 4 </h1>
+        <h3 class="content">Let your  money grow</h3>
+    </div>
+{% endblock %}
+<!--{% block text_box3_block %}
     <div class="div-centered text-centered" data-0="opacity: 1;" data-5="opacity: 0;">
         <h1 class="logo-450"> Piggy Bank </h1>
     </div>
 {% endblock %}
+{% block text_box4_block %}
+    <div class="div-centered text-centered" data-0="opacity: 1;" data-5="opacity: 0;">
+        <h1 class="logo-450"> Piggy Bank </h1>
+    </div>
+{% endblock %}-->
 
+
+<!----- ...Currency Note div... ---->
 {% block currency_note %}
     <div class="box4"  data-0="display: none;" data-250p="display: inline;">
-        <h3>Effect 2</h3>
+        <h3 class="currency-font">Hello</h3>
     </div>
     <div class="box3"  data-0="display: none;" data-150p="display: inline;">
-        <h3>Effect 2</h3>
+        <h3 class="currency-font">Effect 2</h3>
     </div>
     <div class="box2"  data-0="display: none;" data-50p="display: inline;">
-        <h3>Effect 2</h3>
+        <h3 class="currency-font">Effect 2</h3>
     </div>
     <div class="box">
-        <h3>Effect 2</h3>
+        <div class="row">
+            <div class="col-xs-4" style=><h4 class="currency-font"><i class="fa fa-inr"></i>About</h4></div>
+            <div class="col-xs-4 text-center"></div>
+            <div class="col-xs-4 text-right"><h4 class="currency-font"><i class="fa fa-inr"></i>Contact</h4></div>
+            <!--<div class="col-xs-4 text-right" style="background-color:lavender;">
+            <h4 class="currency-font">&#162;ontact</h4></div>
+            Cent symbol - &#162;ontact
+            Bit coin symbol - A<i class="fa fa-btc"></i>OUT
+            -->
+        </div>
+
+        <div class="img-div img-div-centered">
+            <img src="http://placekitten.com/g/400/200" />
+        </div>
+        <div class="row" style="position: absolute;
+                bottom: 5%;
+                width: 100%;">
+            <div class="col-xs-4" style=><h4 class="currency-font"><i class="fa fa-inr"></i>Login</h4></div>
+            <div class="col-xs-4 text-center"></div>
+            <div class="col-xs-4 text-right"><h4 class="currency-font"><i class="fa fa-inr"></i>Social</h4></div>
+        </div>
     </div>
 {% endblock %}
+

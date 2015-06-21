@@ -13,19 +13,50 @@
     margin-right:-4px;
 }
 
-/*Image props*/
-div.img-div {
-    height: 100px;
-    width: 100px;
-    overflow: hidden;
-    border-radius: 50%;
+/*****************Image props*****************/
+div.img-div{
+    height:15vh;
+    width:10vh;
+    overflow:hidden;
+    border-radius:50%;
+    margin-top: -1%;
+    z-index:9999;
 }
 
-.img-div img {
-    -webkit-transform: translate(-50%);
-    margin-left: 100px;
+.img-div img{
+    -webkit-transform:translate(-50%);
+    margin-left:100px;
 }
 
+.img-div-centered {
+  position: fixed;
+  margin-left: 20%;
+}
+
+/* #### Mobile Phones Portrait or Landscape #### */
+@media screen and (max-device-width: 640px){
+    div.img-div{
+        height:15vh;
+        width:10vh;
+        overflow:hidden;
+        border-radius:50%;
+        margin-top: -1%;
+        z-index:9999;
+    }
+
+    .img-div img{
+        -webkit-transform:translate(-50%);
+        margin-left:100px;
+    }
+
+    .img-div-centered {
+      position: fixed;
+      margin-left: 30%;
+    }
+}
+
+
+/************************* LOGO **************************/
 .logo {
     height: 14em;
     width: 14em;
@@ -34,7 +65,28 @@ div.img-div {
     margin: 1em;
 }
 
-/*General page elements*/
+/********************** Fonts *****************************/
+.logo-450{
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 450%;
+    color: #3E4406;
+    //text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.content{
+    font-family: 'Architects Daughter', cursive;
+    color:#D47F24;
+    padding-right: 3%;
+    padding-left: 3%;
+}
+
+.currency-font{
+    font-family: 'Architects Daughter', cursive;
+    color: #584C46;
+}
+
+
+/*******************General page elements******************/
 
 .header {
     border: .3em solid #d9534f;
@@ -62,14 +114,6 @@ div.img-div {
     font-family: 'Voltaire', sans-serif;
 }
 
-.logo-450{
-    font-family: 'Luckiest Guy', cursive;
-    font-size: 450%;
-    color: #3E4406;
-    //text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-
-
 .box h3{
 	text-align:center;
 	position:relative;
@@ -79,47 +123,70 @@ div.img-div {
 .box {
 	width:50vw;
 	height:25vh;
-	background:#FFF;
+	background:#F5F1DE;
 	position: fixed;
 	margin-top: 25vh;
     margin-left: 25vw;
     margin-right: 25vw;
-    border:1px solid black;
+    padding-top: 1.5%;
+    padding-right: 1.5%;
+    padding-bottom: 1.5%;
+    padding-left: 1.5%;
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
 }
 
 .box2 {
 	width:50vw;
 	height:25vh;
-	background:#FFF;
+	background:#F5F1DE;
 	position: fixed;
 	margin-top: 24vh;
     margin-left: 26vw;
     margin-right: 25vw;
-    border:1px solid black;
+    padding-top: 1.5%;
+    padding-right: 1.5%;
+    padding-bottom: 1.5%;
+    padding-left: 1.5%;
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
 }
 
 .box3 {
 	width:50vw;
 	height:25vh;
-	background:#FFF;
+	background:#F5F1DE;
 	position: fixed;
 	margin-top: 23vh;
     margin-left: 27vw;
     margin-right: 25vw;
-    border:1px solid black;
+    padding-top: 1.5%;
+    padding-right: 1.5%;
+    padding-bottom: 1.5%;
+    padding-left: 1.5%;
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
 }
 
 .box4 {
 	width:50vw;
 	height:25vh;
-	background:#FFF;
+	background:#F5F1DE;
 	position: fixed;
 	margin-top: 22vh;
     margin-left: 28vw;
     margin-right: 25vw;
-    border:1px solid black;
+    padding-top: 1.5%;
+    padding-right: 1.5%;
+    padding-bottom: 1.5%;
+    padding-left: 1.5%;
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
 }
-
 
 
 /* #### Mobile Phones Portrait or Landscape #### */
@@ -127,48 +194,74 @@ div.img-div {
     .box {
       width: 75vw;
       height: 20vh;
-      background: #FFF;
+      background: #F5F1DE;
       position: fixed;
       margin-top: 25vh;
       margin-bottom: 0vh;
       margin-left: 14vw;
       margin-right: 26vw;
-      border: 1px solid black;
+      padding-top: 1.5%;
+      padding-right: 1.5%;
+      padding-bottom: 1.5%;
+      padding-left: 1.5%;
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
     }
 
     .box2 {
       width: 75vw;
       height: 20vh;
-      background: #FFF;
+      background: #F5F1DE;
       position: fixed;
       margin-top: 24vh;
       margin-bottom: 0vh;
       margin-left: 15vw;
       margin-right: 26vw;
-      border: 1px solid black;
+      padding-top: 1.5%;
+      padding-right: 1.5%;
+      padding-bottom: 1.5%;
+      padding-left: 1.5%;
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
     }
 
     .box3 {
       width: 75vw;
       height: 20vh;
-      background: #FFF;
+      background: #F5F1DE;
       position: fixed;
       margin-top: 23vh;
       margin-bottom: 0vh;
       margin-left: 16vw;
       margin-right: 26vw;
-      border: 1px solid black;
+      padding-top: 1.5%;
+      padding-right: 1.5%;
+      padding-bottom: 1.5%;
+      padding-left: 1.5%;
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+
     }
 
     .box4 {
       width: 75vw;
       height: 20vh;
-      background: #FFF;
+      background: #F5F1DE;
       position: fixed;
       margin-top: 22vh;
       margin-bottom: 0vh;
       margin-left: 17vw;
       margin-right: 26vw;
-      border: 1px solid black;
+      padding-top: 1.5%;
+      padding-right: 1.5%;
+      padding-bottom: 1.5%;
+      padding-left: 1.5%;
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+
     }
 }

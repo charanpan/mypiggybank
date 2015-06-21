@@ -12,8 +12,14 @@ Instructions to set up env:
 4. mkdir workspace
 5. git clone the mypiggybank repo to workspace
 
-Things to fix:
 
-[FIXED]1. As screen size decreases, the currency div doesn't stay as a rectangle.
+############### Things to fix ########################
 
-[FIXED FOR MOST SCREENS]2. The currency divs multiplying effect irregular on a smaller screen. 
+[YET TO FIX]
+1. The oval logo in the middle of the currency logo doesn't stay as oval in smaller screens. 
+
+[PARTIALLY FIXED]
+1. The currency divs multiplying effect irregular on a smaller screen.
+
+[FIXED]
+1. As screen size decreases, the currency div doesn't stay as a rectangle.
