@@ -1,5 +1,67 @@
 {% extends "base_piggy_page.html" %}
 
+{% block nav_bar %}
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <!--<ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>--->
+      <!--<form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>-->
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#home" title="Home Sweet Home"><i class="fa fa-home fa-2x"></i></a></li>
+        <li><a href="#" title="Read our blog"><i class="fa fa-wordpress fa-2x"></i></a></li>
+        <li><a href="#" title="Find us on Facebook"><i class="fa fa-facebook-official fa-2x"></i></a></li>
+        <li><a href="#" title="WhatsApp Us!"><i class="fa fa-whatsapp fa-2x"></i></a></li>
+        <li><a href="#" title="Contact Us!"> <i class="fa fa-phone fa-2x"></i></a></li>
+        <!--<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>--->
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+{% endblock %}
+
+
+
 <!----- ...Text blocks div... ---->
 {% block logo_block %}
     <div class="div-centered text-centered" data-0="opacity: 1;" data-30p="opacity: 0;">
@@ -13,48 +75,46 @@
     </div>
     <div class="div-centered text-centered" data-160p="opacity:0;" data-210p="opacity:1;" data-250p="opacity:0">
         <h1 class="logo-450"> Text 3 </h1>
-        <h3 class="content">Let your  money grow</h3>
+        <h3 class="content">Coolest content here</h3>
      </div>
     <div class="div-centered text-centered" data-260p="opacity:0;" data-300p="opacity:1;" data-310p="opacity:0">
         <h1 class="logo-450"> Text 4 </h1>
-        <h3 class="content">Let your  money grow</h3>
+        <h3 class="content">Epiphonic ending!</h3>
     </div>
 {% endblock %}
-<!--{% block text_box3_block %}
-    <div class="div-centered text-centered" data-0="opacity: 1;" data-5="opacity: 0;">
-        <h1 class="logo-450"> Piggy Bank </h1>
-    </div>
-{% endblock %}
-{% block text_box4_block %}
-    <div class="div-centered text-centered" data-0="opacity: 1;" data-5="opacity: 0;">
-        <h1 class="logo-450"> Piggy Bank </h1>
-    </div>
-{% endblock %}-->
-
 
 <!----- ...Currency Note div... ---->
 {% block currency_note %}
+
+    <img src="static/images/five_hundred_rupees.png" class="img-responsive currency-note-4 currency-note-centered"
+            data-0="display: none;" data-250p="display: inline;">
+    <img src="static/images/five_hundred_rupees.png" class="img-responsive currency-note-3 currency-note-centered"
+            data-0="display: none;" data-150p="display: inline;">
+    <img src="static/images/five_hundred_rupees.png" class="img-responsive currency-note-2 currency-note-centered"
+            data-0="display: none;" data-50p="display: inline;">
+    <img src="static/images/five_hundred_rupees.png" class="img-responsive currency-note currency-note-centered">
+
+<!---
     <div class="box4"  data-0="display: none;" data-250p="display: inline;">
         <h3 class="currency-font">Hello</h3>
     </div>
+
     <div class="box3"  data-0="display: none;" data-150p="display: inline;">
         <h3 class="currency-font">Effect 2</h3>
     </div>
+
     <div class="box2"  data-0="display: none;" data-50p="display: inline;">
         <h3 class="currency-font">Effect 2</h3>
     </div>
     <div class="box">
+
+        <img src="static/images/five_hundred_rupees.png" class="img-responsive" alt="Cinque Terre" width="304" height="236">
+
         <div class="row">
             <div class="col-xs-4" style=><h4 class="currency-font"><i class="fa fa-inr"></i>About</h4></div>
             <div class="col-xs-4 text-center"></div>
             <div class="col-xs-4 text-right"><h4 class="currency-font"><i class="fa fa-inr"></i>Contact</h4></div>
-            <!--<div class="col-xs-4 text-right" style="background-color:lavender;">
-            <h4 class="currency-font">&#162;ontact</h4></div>
-            Cent symbol - &#162;ontact
-            Bit coin symbol - A<i class="fa fa-btc"></i>OUT
-            -->
         </div>
-
         <div class="img-div img-div-centered">
             <img src="http://placekitten.com/g/400/200" />
         </div>
@@ -65,6 +125,7 @@
             <div class="col-xs-4 text-center"></div>
             <div class="col-xs-4 text-right"><h4 class="currency-font"><i class="fa fa-inr"></i>Social</h4></div>
         </div>
-    </div>
+    </div> -->
+
 {% endblock %}
 

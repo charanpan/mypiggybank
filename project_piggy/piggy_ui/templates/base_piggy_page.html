@@ -10,7 +10,10 @@
 <body ng-app="piggyBank">
 <div ng-controller="PiggyBankController" ng-cloak>
     <section id="box1">
+        <a name="home"/>
         <div class="half-div">
+            {%block nav_bar%}
+            {%endblock%}
             {%block currency_note%}
             {%endblock%}
         </div>
@@ -59,7 +62,6 @@
 <script src="static/controllers/piggyBankController.js"></script>
 <link rel="stylesheet" type="text/css" href="static/css/page_elements.css">
 <script src="static/vendor/skrollr/0.6.29/skrollr.min.js"></script>
-
 <script type="text/javascript">
       var s = skrollr.init();
 </script>

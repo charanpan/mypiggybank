@@ -56,6 +56,23 @@ div.img-div{
 }
 
 
+/************************ NavBar *************************/
+.navbar-default {
+    background-color:#A3B79A;
+    font-family:'Architects Daughter', cursive;
+    border-color: #A3B79A;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #D47F24;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #D47F24;
+  background-color: #F5F1DE;
+}
+
+
 /************************* LOGO **************************/
 .logo {
     height: 14em;
@@ -75,7 +92,9 @@ div.img-div{
 
 .content{
     font-family: 'Architects Daughter', cursive;
-    color:#D47F24;
+    color: #D47F24;
+    padding-right: 3%;
+    padding-left: 3%;
 }
 
 .currency-font{
@@ -118,13 +137,28 @@ div.img-div{
 	top:80px;
 }
 
+
+.currency-note {
+	width:40vw;
+	height:30vh;
+	position: fixed;
+	margin-top: 25vh;
+    margin-left: 30vw;
+    margin-right: 25vw;
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+
+}
+
+
 .box {
 	width:50vw;
 	height:25vh;
 	background:#F5F1DE;
 	position: fixed;
 	margin-top: 25vh;
-    margin-left: 25vw;
+    margin-left: 30vw;
     margin-right: 25vw;
     padding-top: 1.5%;
     padding-right: 1.5%;
