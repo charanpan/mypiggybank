@@ -16,7 +16,10 @@ Instructions to set up env:
 ############### Things to fix ########################
 
 [YET TO FIX]
-1. The oval logo in the middle of the currency logo doesn't stay as oval in smaller screens. 
+
+1. There is a HUGE lag in page loading mostly becuase of font-awesome library. The content appears without CSS first and then re-appears with styling. 
+2. The scroll is jittery. Site boxes up as we scroll faster.
+3. The oval logo in the middle of the currency logo doesn't stay as oval in smaller screens. 
 
 [PARTIALLY FIXED]
 1. The currency divs multiplying effect irregular on a smaller screen.
